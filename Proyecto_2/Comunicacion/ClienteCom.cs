@@ -19,6 +19,7 @@ namespace Proyecto_2.Comunicacion
             this.cliente = socket;
             Stream stream = new NetworkStream(this.cliente);
             this.reader = new StreamReader(stream);
+            this.writer = new StreamWriter(stream);
         }
 
         public void Desconectar()
